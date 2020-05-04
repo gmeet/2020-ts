@@ -42,7 +42,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var path_1 = __importDefault(require("path"));
 var fs_1 = __importDefault(require("fs"));
 var superagent_1 = __importDefault(require("superagent"));
-var analyzer_1 = __importDefault(require("./analyzer"));
 var Crowller = /** @class */ (function () {
     function Crowller(url, analyzer) {
         this.url = url;
@@ -83,7 +82,7 @@ var Crowller = /** @class */ (function () {
     };
     return Crowller;
 }());
-var url = "http://www.feigang.net/";
-var coderAnalyzer = analyzer_1.default.getInstance();
-new Crowller(url, coderAnalyzer);
-console.log('1293');
+exports.default = Crowller;
+// const url = `http://www.feigang.net/`
+// const coderAnalyzer = CoderAnalyzer.getInstance()
+// new Crowller(url, coderAnalyzer)

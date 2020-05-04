@@ -29,9 +29,9 @@ class Crowller {
   }
 }
 
+export default Crowller
 
-const url = `http://www.feigang.net/`
+// const url = `http://www.feigang.net/`
 
-const coderAnalyzer = CoderAnalyzer.getInstance()
-new Crowller(url, coderAnalyzer)
-console.log('1293')
+// const coderAnalyzer = CoderAnalyzer.getInstance()
+// new Crowller(url, coderAnalyzer)
